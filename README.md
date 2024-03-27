@@ -5,10 +5,11 @@
 - Data Structures
 - Mathematics
 - Bitwise Manipulation
-- Subarray 
+- Subarray Handling
+	+ [Kadane's Algorithms](#kadanes-algorithm)
 ---
 
-[Kadane's Algorithms](#kadanes-algorithm)
+
 
 
 
