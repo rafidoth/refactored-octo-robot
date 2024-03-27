@@ -4,16 +4,18 @@
 ---
 - Data Structures
 - Mathematics
-- Bitwise Manipulation
-- Subarray Handling
+	+ [XOR Related](xor-related)
+- [Bitwise Manipulation](#bitwise-manipulation)
+- [Subarray Handling](#subarray-handling)
 	+ [Kadane's Algorithms](#kadanes-algorithm)
 ---
 
 
+# Bitwise Manipulation
+## XOR Related
 
 
-
-# Algorithms
+# Subarray Handling
 
 ## Kadane's Algorithm
 
