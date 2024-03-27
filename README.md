@@ -1,7 +1,18 @@
-# DSA for problem solving
+# problem solving study
+
+### Table of Contents
+---
+- Data Structures
+- Mathematics
+- Bitwise Manipulation
+- Subarray 
+---
+
+[Kadane's Algorithms](#kadanes-algorithm)
 
 
 
+# Algorithms
 
 ## Kadane's Algorithm
 
