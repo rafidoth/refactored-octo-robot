@@ -4,7 +4,7 @@
 ---
 - Data Structures
 - Mathematics
-	+ [XOR Related](xor-related)
+	+ [XOR Related](#xor-related)
 - [Bitwise Manipulation](#bitwise-manipulation)
 - [Subarray Handling](#subarray-handling)
 	+ [Kadane's Algorithms](#kadanes-algorithm)
