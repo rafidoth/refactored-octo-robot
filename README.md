@@ -152,6 +152,40 @@ stack >
 out > abc*+ab-c*-ab++
 ```
 
+## Evaluation of Postfix Expression
+*Rules*
+
+- if operand is encountered : pushed to the stack
+- if operator is encountered : pop 2 ele from stack
+	+ A : top element
+	+ B : Next top element
+	+ then do B operator A and push result to the stack
+- stack top is the final evaluated result
+
+```
+Input : 23-21*+
+Stack : 2
+
+Input : 3-21*+
+Stack : 2 3  
+
+Input : -21*+
+Stack : -1 
+
+Input : 21*+
+Stack : -1 2
+
+Input : 1*+
+Stack : -1 2 1
+
+Input : *+
+Stack : -1 2
+
+Input : +
+Stack : 1
+```
+
+
 # Mathematics
 
 #### Some precaution for reading these codes
