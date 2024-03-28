@@ -65,9 +65,10 @@ int xorInRange(int n){
 ```
 Similiarly,[ xor in any range of l...r can  be calculated ](https://www.geeksforgeeks.org/find-xor-of-numbers-from-the-range-l-r/)
 
-Related Problems
+XOR Related Problems
  
 - [1734. Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/)
+- [B. Roof Construction](https://codeforces.com/problemset/problem/1632/B)
 
 
 # Subarray Handling
