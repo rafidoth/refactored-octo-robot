@@ -3,7 +3,7 @@
 ### Table of Contents
 ---
 - Data Structures
-	+ Stack
+	+ [Stack](#stack)
 		* [Expression Parsing Using Stack](#expression-parsing-using-stack)
 - Mathematics
 	
@@ -13,8 +13,9 @@
 	+ [Kadane's Algorithms](#kadanes-algorithm)
 ---
 
+# Stack
 
-# Expression Parsing Using Stack
+## Expression Parsing Using Stack
 ---
 
 #### Precedence of the operators
