@@ -11,10 +11,13 @@ this table has high redundency. We'll see what types of problems we face while d
 In this table, if we want to update the room for a course we have to update it for all instances where that course is present. Otherwise two instance will have separate room number.<br>
 ![](frame3.png) <br>
 
-- Delete Anomaly
+- Delete Anomaly<br>
 Suppose, we have to remove the course, then we have to delete every instance of it. Its similar thing like the previous anomaly.<br>
 
-- Insert Anomaly
+- Insert Anomaly<br>
 If a new course is opened and its obvious that no student is enrolled there, in that case how would we insert the course here with its room no because student is null.<br>
 ![](insertanomaly.png)<br>
 
+If we decompose the table and make it two separate table we can avoid redundency.<br>
+![](abc1.png)
+![](abc2.png)<br>
