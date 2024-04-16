@@ -12,15 +12,18 @@
 
 
 #### Infix to Postfix Conversion
-1. operands will go to last for one particular operation
+1. operands will go to last for one particular operation \
 ![](expression_parsing_২০২৪০৩২৪১৯৩৩০৩১২৭.png)
-2. for more than one operation precedence will be followed
+2. for more than one operation precedence will be followed \
 ![](expression_parsing_২০২৪০৩২৪১৯৩৫৫০৩৫০.png)
 
-## Using Stack
-*Rules*
-1. Operands will go to the output directly without any operation and if the stack is empty or stack top is a opening bracket then operator will be pushed to the stack.If the incoming symbol is '(' then it will be pushed to the stack always.
-	+ ![](expression_parsing_২০২৪০৩২৪২২০৪২৪৩১১.png)
+## Infix to Postfix Conversion Using Stack
+*Rules*\
+1. Operands will go to the output directly without any operation <br>
+2. if the stack is empty or stack top is an opening bracket then operator will be pushed to the stack.<br>
+3. If the incoming symbol is '(' then it will be pushed to the stack always.<br>
+
+	![](frame1.png)
 
 2.  If the incoming symbol is ')' then pop the stack send the symbols to the output until its opening one '('.
 	+ For example, if the stack is like this
