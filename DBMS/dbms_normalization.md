@@ -87,11 +87,11 @@ Then $AG^+$ = AGBCHI = ABCGHI<br>
 If an attribute's closure contains all the attributes then its a super key.
 Above AG is a super key.
 
-**Finding numbers of superkey **
-
 **Candidate Key**<br>
 A super key whose proper subset attributes are not super key itself.<br>
 
+**Prime Attribute**<br>
+Attributes present in candidate key 
 ****
-Finding Candidate key<br>
-![alt text](image.png)
+[Finding Candidate key](https://www.youtube.com/watch?v=L0LEtrIDYrE&list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc&index=7)<br>
+
