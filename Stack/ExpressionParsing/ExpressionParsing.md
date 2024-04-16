@@ -25,18 +25,18 @@
 
 	![](frame1.png)
 
-2.  If the incoming symbol is ')' then pop the stack send the symbols to the output until its opening one '('.
-	+ For example, if the stack is like this
-	+ ![](expression_parsing_২০২৪০৩২৪২০১২৫৮৫১০.png) 
-	+ and the incoming symbol is ')' then 
-	+ ![](expression_parsing_২০২৪০৩২৪২০১৬০৪৩১০.png)
-	+ parenthesis will not go to the output, these will be discarded.
+4.  If the incoming symbol is ')' then pop the stack send the symbols to the output until its opening one '('.<br>
+For example, if the stack is like this<br>
+	![](expression_parsing_২০২৪০৩২৪২০১২৫৮৫১০.png) <br>
+	and the incoming symbol is ')' then <br>
+	![](expression_parsing_২০২৪০৩২৪২০১৬০৪৩১০.png)  <br>
+	parenthesis will not go to the output<br>
 
-3. If the incoming symbol has higher precedence than the top of the stack then it will be pushed to the stack else pop the stack and send to the output until you get symbol with lower precedence or stack becomes empty and lastly push the incoming symbol.
+5. If the incoming symbol has higher precedence than the top of the stack then it will be pushed to the stack else pop the stack and send to the output until you get symbol with lower precedence or stack becomes empty and lastly push the incoming symbol.
 	+ higher precedence than top of the stack : pushed to the stack
 	+ lower precedence than top of the stack : pop the stack and send to the output until getting symbol with lower precedence or stack becoming empty then push
 
-4. If the incoming symbol has the same precedence of the top of the stack then check associativity rule. 
+6. If the incoming symbol has the same precedence of the top of the stack then check associativity rule. 
 	+ For Left to Right follow the rule of lower precedence
 	+ For Right to Left follow the rule of higher precedence
 
