@@ -112,4 +112,6 @@ So, CD is a candidate key.
 $$Prime Attributes = C,D$$
 - Check if Any of the prime attributes is present on the right side of any functional dependency or not. Place them in the present candidate key like this.<br>
 From FD $AB->C$<br>
-we can write $CD = ABD $ and again step 1 we can get B from D so $AD$ might be a candidate key so check and keep going on this loop until you don't find any of prime attributes at the right of FD.<br>
+we can write $CD = ABD$ and again step 1 we can get B from D so $AD$ might be a candidate key so check and keep going on this loop until you don't find any of prime attributes at the right of FD.<br>
+
+## Minimal Cover
