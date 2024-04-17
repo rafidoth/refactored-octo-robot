@@ -115,9 +115,49 @@ If we decompose the table and make it two separate table we can avoid redundency
 
 
 ## 1NF 
-- Each attribute/column should contain only atomic values. Atomic means it can't be decomposed furthur.<br>
-![](125.png)<br>
-here Course and Room columns are containing multiple values.<br>
-we can create individual row for each cases.<br>
-![alt text](image-1.png)<br>
+- Each attribute/column should contain only atomic values. Atomic means it can't be decomposed furthur. Therefore, no columns should contain multiple value in a single row.
+- Columns / Attributes should have same name.
+- A column should contain only same type of values.
+- No duplicate rows should be in the table.
+- order doesn't matter.
+- **Primary key is must.**
+
+**Solution Steps You can take to make 1NF**
+***
+- Making separate table for multivalued attributes.
+
+## 2NF
+**Identify that its in 2NF or not**
+
+- it must be 1NF
+- No partial dependency should be present in the relation
+
+### Partial Dependency
+Non-prime attribute : Attributes those aren't part of candidate key.<br>
+<br>if<br>
+*Proper Subset of CK -> any non-prime attribute*
+<br>
+then
+<br>
+its partial Dependency.<br>
+
+## 3NF
+**Identify that its in 2NF or not**
+
+- it must be 2NF
+- No transitive dependency should be present in the relation.
+
+### Transitive Dependency : 
+Non prime attribute -> Non prime attribute.
+
+
+## Decomposition
+At the time of decomposing a relation we have to maintain two things.
+
+- it should be dependency preserving
+- it should be lossless
+
+## Dependency Preserving Decomposition
+
+
 
