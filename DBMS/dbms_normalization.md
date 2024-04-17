@@ -118,6 +118,6 @@ If we decompose the table and make it two separate table we can avoid redundency
 - Each attribute/column should contain only atomic values. Atomic means it can't be decomposed furthur.<br>
 ![](125.png)<br>
 here Course and Room columns are containing multiple values.<br>
-we can create individual row for each cases.
-![alt text](image-1.png)
+we can create individual row for each cases.<br>
+![alt text](image-1.png)<br>
 
