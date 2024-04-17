@@ -158,6 +158,6 @@ At the time of decomposing a relation we have to maintain two things.
 - it should be lossless
 
 ## Dependency Preserving Decomposition
-
+![](127.png)
 
 
