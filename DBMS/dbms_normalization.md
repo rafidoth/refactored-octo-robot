@@ -1,28 +1,3 @@
-# Normalization
-
-process of organizing data in database to minimize redundency and dependency.
-
-## Anomaly (Problems)
-Mainly these are the problems we face for redundency in database. I tried to explain these below. <br>
-![](frame2.png)<br>
-this table has high redundency. We'll see what types of problems we face while dealing with this table.<br>
-
-- Update Anomaly <br>
-In this table, if we want to update the room for a course we have to update it for all instances where that course is present. Otherwise two instance will have separate room number.<br>
-![](frame3.png) <br>
-
-- Delete Anomaly<br>
-Suppose, we have to remove the course, then we have to delete every instance of it. Its similar thing like the previous anomaly. Again in another situation, if we want remove a student it will remove the course and its room number too. And lets say that course has only one student then we'll lose the room number associated with that course too.<br>
-
-- Insert Anomaly<br>
-If a new course is opened and its obvious that no student is enrolled there, in that case how would we insert the course here with its room no because student is null.<br>
-![](insertanomaly.png)<br>
-
-If we decompose the table and make it two separate table we can avoid redundency.<br>
-![](abc1.png)
-![](abc2.png)<br>
-
-
 ## Functional Dependency
 [Youtube Lecture Followed](https://www.youtube.com/watch?v=dR-jJimWWHA)<br>
 A->B<br>
@@ -114,4 +89,32 @@ $$Prime Attributes = C,D$$
 From FD $AB->C$<br>
 we can write $CD = ABD$ and again step 1 we can get B from D so $AD$ might be a candidate key so check and keep going on this loop until you don't find any of prime attributes at the right of FD.<br>
 
-## Minimal Cover
+# Normalization
+[Lecture Followed](https://www.youtube.com/watch?v=p-j9emhNVTg&list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc&index=9) <br>
+process of organizing data in database to minimize redundency and dependency.
+
+## Anomaly (Problems)
+Mainly these are the problems we face for redundency in database. I tried to explain these below. <br>
+![](frame2.png)<br>
+this table has high redundency. We'll see what types of problems we face while dealing with this table.<br>
+
+- Update Anomaly <br>
+In this table, if we want to update the room for a course we have to update it for all instances where that course is present. Otherwise two instance will have separate room number.<br>
+![](frame3.png) <br>
+
+- Delete Anomaly<br>
+Suppose, we have to remove the course, then we have to delete every instance of it. Its similar thing like the previous anomaly. Again in another situation, if we want remove a student it will remove the course and its room number too. And lets say that course has only one student then we'll lose the room number associated with that course too.<br>
+
+- Insert Anomaly<br>
+If a new course is opened and its obvious that no student is enrolled there, in that case how would we insert the course here with its room no because student is null.<br>
+![](insertanomaly.png)<br>
+
+If we decompose the table and make it two separate table we can avoid redundency.<br>
+![](abc1.png)
+![](abc2.png)<br>
+
+
+## 1NF 
+- Each attribute/column should contain only atomic values. Atomic means it can't be decomposed furthur.<br>
+<img src="125.png" style="width:350px;"/>
+
