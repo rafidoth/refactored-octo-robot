@@ -94,4 +94,22 @@ A super key whose proper subset attributes are not super key itself.<br>
 Attributes present in candidate key 
 ****
 [Finding Candidate key](https://www.youtube.com/watch?v=L0LEtrIDYrE&list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc&index=7)<br>
+Steps to follow <br>
+Question : <br>
+A Relation given that R(A,B,C,D)<br>
+FD : <br>
+AB -> CD , D->B, C->A<br>
 
+-   find closure of all the attributes together for example $ABCDE^+$ and we know it must be super key.ABCD is a super key which is obvious.<br><br>
+$$ABCD^+ = ABCD (superkey) $$ 
+- Now remove all the attributes that can be determined from other one. Consider all direct and indirect application of Armstrong's axiom and its additional rules.<br>
+$$CD^+ = CDAB (superkey)$$
+- Now what you got, check its proper subsets to ensure if its a candidate key or not.<br>
+$$C^+ = AC$$
+$$D^+ = BD$$
+So, CD is a candidate key.
+- If you get one candidate key, then write down the prime attributes.
+$$Prime Attributes = C,D$$
+- Check if Any of the prime attributes is present on the right side of any functional dependency or not. Place them in the present candidate key like this.<br>
+From FD $AB->C$<br>
+we can write $CD = ABD $ and again step 1 we can get B from D so $AD$ might be a candidate key so check and keep going on this loop until you don't find any of prime attributes at the right of FD.<br>
