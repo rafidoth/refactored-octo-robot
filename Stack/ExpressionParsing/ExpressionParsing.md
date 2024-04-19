@@ -36,6 +36,12 @@ For example, if the stack is like this<br>
 	+ higher precedence than top of the stack : pushed to the stack
 	+ lower precedence than top of the stack : pop the stack and send to the output until getting symbol with lower precedence or stack becoming empty then push
 
+<br>
+<em>While popping from stack because input has lower precedence isn't there a case where a '(' can come in the road and then what to do?</em>
+<p>:: It won't happen. analyze this infix expression <br>$2+3*4*(6*3+2)$</p>
+<br>
+<br>
+<br>
 6. If the incoming symbol has the same precedence of the top of the stack then check associativity rule. 
 	+ For Left to Right follow the rule of lower precedence
 	+ For Right to Left follow the rule of higher precedence
@@ -137,8 +143,8 @@ out > abc*+ab-c*-ab++
 ```
 
 ## Evaluation of Postfix Expression
-*Rules*
-
+*Rules*<br>
+*input will be from left to right*
 - if operand is encountered : pushed to the stack
 - if operator is encountered : pop 2 ele from stack
 	+ A : top element
