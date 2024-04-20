@@ -171,4 +171,5 @@ If R is a Relation and its decomposed to $R_1$ and $R_2$ then it will be conside
 
 ## Minimal Cover 
 ![](image-2.png)
-
+![alt text](image-3.png)
+![alt text](image-4.png)
