@@ -161,4 +161,12 @@ At the time of decomposing a relation we have to maintain two things.
 ![](127.png)<br>
 ![](321.png)<br>
 
+## Lossless Decomposition
+If R is a Relation and its decomposed to $R_1$ and $R_2$ then it will be considered Lossless if <br>
+
+- if there is at least a common attribute
+- the common attribute is super key of any of the subrelation (R1 or R2)
+<br>
+<br>
+![alt text](image-2.png)
 
