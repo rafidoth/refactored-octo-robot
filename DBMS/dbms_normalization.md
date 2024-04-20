@@ -168,5 +168,5 @@ If R is a Relation and its decomposed to $R_1$ and $R_2$ then it will be conside
 - the common attribute is super key of any of the subrelation (R1 or R2)
 <br>
 <br>
-![](image2.png)
+![](2313.png)<br>
 
