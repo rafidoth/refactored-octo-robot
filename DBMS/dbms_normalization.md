@@ -166,8 +166,8 @@ If R is a Relation and its decomposed to $R_1$ and $R_2$ then it will be conside
 
 - if there is at least a common attribute
 - the common attribute is super key of any of the subrelation (R1 or R2)
-<br>
-![](2313.png)<br>
+
+![](2313.png)
 
 ## Minimal Cover 
 ![](image-2.png)
