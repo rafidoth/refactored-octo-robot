@@ -173,3 +173,8 @@ If R is a Relation and its decomposed to $R_1$ and $R_2$ then it will be conside
 ![](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
+
+
+## 1NF to 2NF
+https://www.youtube.com/watch?v=WqPiMk3IVV4&list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc&index=22 <br>
+
