@@ -1,0 +1,113 @@
+Minimal Cover (minimum size FD)
+--------------------------
+Suppose, FD of a Relation is F and its minimal cover is E
+1. Ensuring no redundency in FD
+2. Every FD in E will have single attribute in the right
+3. For any FD in E, For A->b not proper subset of A will generate b
+
+
+
+Ex01:
+-------------------
+
+R = {A,B,C,D,E,F}
+F = {
+	ABC -> CDEF,
+	C   -> E,
+	A   -> B,
+	D   -> F
+}
+
+
+Decomposition:
+	ABC ->C
+	ABC ->D
+	ABC ->E
+	ABC ->F
+	C->E
+	A->B
+	D->F
+
+Removing Redundant FD:
+	ABC -> C 
+		1. ABC+ = ABCDEF
+		2. ABC+ = ABCDEF
+		-> Redundant
+	ABC ->D
+		1. ABC+ = ABCDEF
+		2. ABC+ = ABCEF 
+		-> Not Redundant
+	ABC ->E
+		1. ABC+ = ABCDEF
+		2. ABC+ = ABCDFE
+		-> Redundant
+	ABC ->F
+		1. ABC+ = ABCDEF
+		2. ABC+ = ABCDEF
+		->Redundant
+	C->E
+		1. C->CE
+		2. C->C
+		-> Not Redundant
+	A->B	
+		1. A->AB
+		2. A->A
+		-> not redundant
+	D->F
+		1. D->DF
+		2. D->D
+		-> not redundant
+		
+	Now,
+	ABC ->D
+	C->E
+	A->B
+	D->F
+
+Remove extraneous attribute :
+	---------------------------------------
+	|	A  -> BC and B -> C then C extraneous -> A->B
+	|	AB -> C and B -> C then A Extraneous -> B->C
+	|	AB -> C and A->B then B is extraneous -> A->C
+	---------------------------------------
+
+	
+	ABC ->D : AC -> D [B is extraneous]
+	C->E	
+	A->B
+	D->F
+
+Minimal Cover Result :
+	AC->D
+	C->E	
+	A->B
+	D->F
+	
+
+
+Ex-02
+-------------------
+
+R = {A,B,C,D,E,F}
+F = { 
+	AB -> CD,
+	B -> C,
+	BC -> D,
+	CD -> EF,
+	E->F
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
