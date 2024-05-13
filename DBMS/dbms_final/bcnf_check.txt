@@ -1,0 +1,85 @@
+BCNF Check 
+-------------------
+Rule : All Non Trivial Fd : left side -> SK
+
+
+R = {A,B,C,D,E}
+F = {A->B, BC->D}
+
+Non Trivial :
+--------------
+A+ = AB -> not SK 
+
+hence, not BCNF
+Converting to BCNF :
+----------------------
+	          R1(A,B)      
+       		  /
+R(A,B,C,D,E) --> /
+      	         \	          R21(A,C,D)
+                  \              /
+                 R2(C,D,E,A) -->
+				 \
+				  R22 (E,A,C)
+
+Decomposing R:
+---------------
+R1(A,B)
+-----------
+F1 = {A->B}
+A+ = AB -> SK  
+R1 -> bcnf
+
+
+R2(C,D,E,A)
+-----------
+in R : A->B and BC->D pseudo transitivity : AC -> D
+F2 = {AC->D}
+AC+ = ACD -> not sk 
+R2 -> not bcnf
+
+
+
+decomposing R2 :
+-----------------
+	          R21(A,C,D)
+                  /
+                 /
+R2(C,D,E,A)----->
+                 \
+                  \
+		  R22(E,A,C)
+
+R21:
+-------
+R = {A,C,D}
+F21 = { AC->D}
+AC+ = ACD -> SK 
+R21 -> bcnf
+
+R22:
+-------
+R = {E,A,C}
+F22 = {}
+no fd so its also bcnf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

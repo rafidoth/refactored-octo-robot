@@ -1,0 +1,171 @@
+Dependency Preserving Decomposition:
+------------------------------------------------
+Ex01
+------------
+R (A, B, C, D )
+F = {AB –> C, C –> D, D –> A}
+R1 = {A,B,C}
+R2 = {C,D}
+
+for R1(A,B,C)
+--------------
+A+ = A => {}
+B+ = B => {}
+C+ = CA => C->A
+AB+ = ABCD => AB->C 
+BC+ = ABCD =>  BC->A
+AC+ = ACD => {}
+F1 = {
+	C->A
+	AB->C
+	BC->A
+	}
+	
+
+for R2(C,D)
+----------------
+C+ = ACD => C->D
+D+ = DA => {}
+F2 ={
+	C->D
+}
+
+
+D->A is not dependency preserving
+
+EX-02 Summer23
+---------------------
+Check whether the following decomposition of the relation, R will
+Preserve the dependencies or not.
+R={A, B, C, D, E, G }
+FD = { 	AB -> C,
+	AC -> B,
+	AD -> E, 
+	B -> D, 
+	BC -> A, 
+	E -> G
+	}
+
+Decompose to: 
+R1 (A, B)
+R2 (B, C)
+R3 (A, B, D, E)
+
+for R1 
+------------
+A+ = A 	=> {}
+B+ = BD => {}
+
+for R2
+-------------
+B+ = BD => {}
+C+ = C  => {}
+
+for R3
+-------------
+A+ = A => {}
+B+ = BD => B->D
+D+ = D => {}
+E+ = EG => {}
+
+AB+ = ABCDEG => AB->DE
+AE+ = AE => {}
+AD+ = ADEG => AD ->E
+BD+ = BD => {}
+BE+ = BEGD => BE -> D 
+DE+ = DEG => {}
+
+ABE+ = ABECDG => ABE-> D
+ABD+ = ABDCEG => ABD-> E
+BDE+ = BDEG => {}
+ADE+ = ADEG => {}
+
+
+F3 = {AB->DE, AD->E, BE->D, ABE->D, ABD->E}
+
+FD = { 	AB -> C, 
+	AC -> B, 
+	AD -> E, 
+	B -> D, 
+	BC -> A, 
+	E -> G
+}
+
+AB+ = ABDE here C isn't present
+so dependency isn't preserved
+
+
+
+Lossless Decomposition
+-----------------------------
+R is a relation
+R1, R2 decomposed from R
+
+if
+R1 ∩ R2 = R1
+or 
+R1 ∩ R2 = R2 
+then 
+its lossless
+
+EX01 Spring 23
+--------------
+
+Check whether the following decomposition of the relation given below is a valid decomposition or not. Justify your answer with proper explanation of lossless decomposition.
+R(A, B, C, D, E, F, G)
+FD: {
+	AB -> C
+	AC -> DE 
+	B -> F 
+	E -> G 
+}
+Decompose to: 
+	R1(A, B, C)
+	R2(A, C, D, E)
+	R3(E, F, G)
+
+Step 1 :
+--------
+R1 ∩ R2 = {A,C}
+
+Finding AC+ using FD:
+---------------------
+AC+ = ACDEG
+Since AC is SK for R2
+
+
+Step 2:
+--------
+R12(A,B,C,D,E) from R1 ∪ R2
+R12 ∩ R3 = {E}
+
+Finding E+ using FD:
+---------------------
+E+ = EG 
+E is not sk for any of the sub relations
+hence  this is a lossy decomposition
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

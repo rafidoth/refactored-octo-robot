@@ -1,0 +1,10 @@
+1. Finding Valid FDs
+2. Finding all possible candidate keys
+3. Canonical Cover / Minimal Cover
+4. Finding the normal form
+5. checking if a decomposition is dependency preserving or not
+6. checking if a decomposition is lossless or lossy
+
+
+7. B+ Tree Insertion
+8. Indexing
