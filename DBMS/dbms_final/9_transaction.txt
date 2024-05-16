@@ -1,0 +1,27 @@
+Transaction Properties
+-------------------------
+- Atomicity
+
+
+
+
+
+Schedule -----> Lec-21
+--------------------------
+1. Normal Schedule  
+2. Serial Schedule (a transaction waits for its previous)
+
+
+
+Conflict Serializzbility
+-----------------------------
+only two Read operation can be swaped.[on Same Account]
+
+Precedenkce Graph
+------------------
+Node -> transaction T1, T2, T3.....
+Edge -> 
+	if T1 -> W(Acc1) T2-> W(Acc1)/R(Acc1) then E(T1,T2)
+	no comparison with self transaction column
+:::: Topological sort -> get the serial 
+	if cycle found -> not serializable

@@ -1,0 +1,108 @@
+Finding Normal Form of the given relation
+--------------------------------------------
+Partial Dependency : proper subset of ck -> npa
+Transitive Dependency : npa -> npa
+
+Ex01:
+------------------
+Given a relation 
+R( P, Q, R, S, T, U, V, W ) 
+FD = { PQ -> R, P -> ST, Q -> U, and U -> VW }
+determine given R is in which normal form?
+
+
+---------> find CK
+alpha = {P,Q} // not in rs ( Independent )
+beta = {R,S,T,V,W} //not in ls but in rs (completely dependent)
+
+PQ+ = PQRUVWST -> SK -> CK
+only CK is PQ
+
+
+--------->2NF?
+NPA = {R,S,T,U,V,W}
+
+P+ = PST
+P->S is a partial dependency.
+
+So, R is in 1NF only.
+
+
+
+
+
+EX02:
+--------------
+Given a relation 
+R( P, Q, R, S, T) 
+FD = { QR → PST, S → Q }
+determine given R is in which normal form?
+
+
+===========Finding CK=============
+alpha = {R} //independent
+beta = {P,T} // completely dependent
+
+
+iteration-1:
+	R+ = R -> not sk 
+iteration-2:
+	RQ+ = QRPST -> SK -> CK
+	RS+ = RSQPT -> SK -> CK
+	
+CK = {QR, RS}
+
+============ by default its 1NF =======
+
+============ check 2NF ================
+PA = {R,Q,S}
+NPA = { P,T}
+
+Q+ = Q
+R+ = R
+S+ = SQ
+
+its 2NF 
+
+============ check 3NF =================
+P+ = P
+T+ = T
+
+no transitive dependency exists
+its 3NF also
+
+============ check bcnf ================
+QR+ = QRPST -> SK
+S+ = SQ -> not sk 
+hence not bcnf
+
+Highest normal form is 3NF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

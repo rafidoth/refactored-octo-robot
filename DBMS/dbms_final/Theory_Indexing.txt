@@ -1,0 +1,16 @@
+Indexing
+--------------
+
+1. optimize database performance by 
+	minimizing the number of disk accesses
+2.
+
+
+Indexing Methods:
+------------------
+1. Ordered Indices
+2. Primary Index
+	a. Dense Index 
+	b. Sparse Index
+3. Secondary Index
+4. Clustering Index

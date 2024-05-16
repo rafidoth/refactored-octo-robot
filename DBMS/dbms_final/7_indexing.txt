@@ -1,0 +1,26 @@
+Indexing
+------------------
+https://www.geeksforgeeks.org/difference-between-dense-index-and-sparse-index-in-dbms/
+
+
+
+
+
+two types 
+	    primary (sparse, dense)
+	   /
+1. Ordered 
+	   \
+	    secondary (only sparse)
+2. unordered
+
+
+Sparse			Dense
+Memory Efficient	Com
+
+primary : 
+
+
+
+
+
