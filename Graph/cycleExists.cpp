@@ -5,14 +5,19 @@ typedef long long int lli;
 
 
 	
-void dfs(vector<vector<int>> &G, int start, vector<bool>&visited){
+bool cycleExists(vector<vector<int>> &G, int start, vector<bool>&visited, int parent){
 	visited[start] = true;
 	cout << start << "->";
-	for(int Vertex : G[start]){
-		if(visited[Vertex] == false){
-			dfs(G, Vertex, visited);
+	for(int child : G[start]){
+		if(visited[child] == false){
+			if(cycleExists(G, child, visited, start)){
+				return true;
+			}
+		}else if(child != parent){
+			return true; // cycle detected
 		}
 	}
+	return false;
 }
 
 int main(){
@@ -42,12 +47,11 @@ int main(){
 		cout << "\n";
 	}     
 
-	// DFS traversal code
+
+	// cycle detection
 	vector<bool> visited(V,false);	
 	for(int i=0;i<V;i++){
-		if(visited[i]==false){
-			dfs(Graph, 1,visited);
-		}
+		cycleExists(Graph, 1,visited,-1);
 	}
 	cout << endl;
 

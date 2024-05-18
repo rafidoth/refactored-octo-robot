@@ -1,1 +1,6 @@
-1
+Adjecency List
+d->e e 
+c->d 
+b->c 
+a->b e f 
+

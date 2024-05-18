@@ -1,0 +1,79 @@
+Binary Heap
+----------------
+1. a binary tree
+2. Classification
+		a. Min Heap
+		b. Max Heap
+3. Min Heap -> root is always less than its childs
+4. Max Heap -> root is always greater than its childs
+
+
+
+
+Simulation
+--------------
+Max Heap
+
+
+root = i
+left child = 2i+1
+right child = 2i+2
+ 
+80 70 75 65 68 71 72
+
+insert(78)
+   0  1  2  3  4  5  6  7
+-> 80 70 75 65 68 71 72 78
+			 			 i
+-> 80 70 75 78 68 71 72 65
+			i
+
+
+Inserting algorithm
+---------------------
+size++
+1. add the new node at the last of the heap
+2. HeapUp(last node/new node)
+
+
+Deleting Algorithm 
+--------------------
+size--
+1.Replace the root or element to be deleted by the last element.
+2.Delete the last element from the Heap.
+3.Since, the last element is now placed at the position of the root node. 
+4.Heapify from the first node (because only its changed in the heap)
+
+
+Heapify
+A normal binary tree -> Heap (Max/Min)
+------------------------------------------
+
+Max-Heapify - Heap Down - Algorithm
+---------------------------------------
+i = node from which you want to start heapify
+size = array length
+
+Max-Heapify(arr, i)
+	l = left(i)
+	r = right(i)
+	largest = i
+	if l < size && arr[l] > arr[largest]
+		largest = l
+	if r < size && arr[r] > arr[largest]
+		largest = r
+	if(largest!=i)
+		exchange arr[i] and arr[largest]
+		Max-Heapify(arr,largest)
+
+
+Max-Heapify - HeapUp - Algorithm
+-----------------------
+HeapUp(arr[],n,i){
+	parent = getParent(i)
+	if parent>=0 
+		if arr[i] > arr[parent]
+			exchange arr[i] with arr[parent]
+			HeapUp(arr,n,parent)
+		
+}

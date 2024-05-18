@@ -28,15 +28,7 @@ public:
             adjList[x[0]].push_back(x[1]);
             adjList[x[1]].push_back(x[0]);
         }
-        /*
-        for(int i = 0;i<n;i++){
-            cout << i << "  : ";
-            for(int x : adjList[i]){
-                cout << x << " ";
-            }
-            cout << endl;
-        }
-        */
+
         vector<bool> visited(n,false);
         bool flag = false;
         dfs(source,destination,adjList,visited,flag);

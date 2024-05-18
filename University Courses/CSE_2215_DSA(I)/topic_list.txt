@@ -1,0 +1,19 @@
+1. Stack 
+	a. Tower of Hanoi
+	b. Prefix, postfix, infix
+	c. implementation using array, linked list
+2. Queue
+	a. implementation of circular queue
+	b. Priority queue 
+		i) implementation
+		ii) simulation
+3. Heap 
+	a. implementation
+	b. min heap, max heap
+	c. heap sort
+4. Tree
+	a. Binary Tree
+	b. Binary Search Tree
+5. Graph 
+	a. BFS, DFS
+	b. Topological sort
