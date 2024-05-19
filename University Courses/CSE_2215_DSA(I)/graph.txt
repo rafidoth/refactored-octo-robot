@@ -18,7 +18,7 @@ DFS Cycle Detection
 -----------------------
 dfs_cycle(Graph[][], u, visited[], parent){
 	visited[u] <- true
-	for each child of Graph[u]
+	for each child V of Graph[u]
 		if visited[V] = false
 			if dfs(Graph, V, visited, u) = true 
 				return true
@@ -66,4 +66,21 @@ bfs_shortestPath(Graph[][],source, visited[], distance[]){
 
 
 
+Topological Sort
+--------------------------
 
+topological_sort(Graph){
+	stack S
+	for each u(vertex) of Graph 
+		indegree[u] = indeg(u)
+		if indegree[u] = 0 
+			S.push(u)
+	while S is not empty:
+		v = S.pop()
+		print(v)
+		for each u(out_vertex) of v do:
+			indegree[u]--
+			if indegree[u] = 0 do
+				S.push(u)
+			
+}
