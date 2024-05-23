@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 struct Node{
     int data;
     Node* left;
@@ -23,7 +22,6 @@ void preorder(Node* root){
     }
 }
 
-
 void postorder(Node* root){
     if(root!= NULL){
         postorder(root->left);
@@ -31,7 +29,6 @@ void postorder(Node* root){
         cout << root->data << " ";
     }
 }
-
 
 void inorder(Node* root){
     if(root!= NULL){

@@ -1,0 +1,49 @@
+5
+2
+8 9
+3
+1 1 2
+4
+1 1 4 5
+5
+2 3 3 3 3
+4
+100000 100000 100000 100000
+
+
+void solve(){
+	int n;
+	cin >> n;
+	vector<int> v(n);
+	for(int i =0;i<n;i++){
+		cin >> v[i];
+	}
+
+	if(n==2){
+		cout << "YES"<<endl;
+		return ;
+	}
+	map<int,int> mp;
+	for(int i =0;i<n;i++){
+		if(mp.size()>2){
+			cout << "NO" << endl;
+			return;
+		}
+		mp[v[i]]++; 
+	}
+	if(mp.size()==1){
+		cout << "YES" <<endl;
+		return;
+	}
+	vector<int> twovalues;
+	for(auto pair : mp){
+		twovalues.push_back(pair.second);
+	}
+	
+	if(twovalues[0]==twovalues[1] || abs(twovalues[0]-twovalues[1])==1){
+		cout << "YES" <<endl;
+	}else cout << "NO"<<endl;
+	
+	
+}
+
