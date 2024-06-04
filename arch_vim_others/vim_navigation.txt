@@ -1,0 +1,33 @@
+Basic movement commands:
+- h, j, k, l: These keys move the cursor left, down, up, and right respectively.
+- w: Move forward one word.
+- b: Move back one word.
+- 0: Move to the beginning of the line.
+- $: Move to the end of the line.
+- gg: Move to the beginning of the file.
+- G: Move to the end of the file.
+Search:
+- /text: Search forward for "text".
+- ?text: Search backward for "text".
+- n: Move to the next search result.
+- N: Move to the previous search result.
+Jumping:
+- Ctrl + o: Jump back to previous cursor position.
+- Ctrl + i: Jump forward to the next cursor position.
+Line numbers:
+- :n (where n is a line number): Jump to a specific line number.
+Scrolling:
+- Ctrl + u: Scroll half a page up.
+- Ctrl + d: Scroll half a page down.
+- Ctrl + b: Scroll one page up.
+- Ctrl + f: Scroll one page down.
+Marks:
+- ma: Set mark 'a' at the current cursor position.
+- 'a: Jump to the line of mark 'a'.
+- `a: Jump to the exact position of mark 'a'.
+Faster navigation:
+- Ctrl + d: Move half a page down.
+- Ctrl + u: Move half a page up.
+- Ctrl + f: Move a page forward.
+- Ctrl + b: Move a page backward.
+
