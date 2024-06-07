@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Number Theory.md",
+                "file": "Number Theory/Thoughts.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Number Theory.md",
+                "file": "Number Theory/Thoughts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Number Theory.md",
+                "file": "Number Theory/Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Number Theory.md"
+                "file": "Number Theory/Thoughts.md"
               }
             }
           }
@@ -148,8 +148,15 @@
   },
   "active": "401e1545be54b544",
   "lastOpenFiles": [
-    "smotify.md",
+    "Number Theory/Prime Factorization.md",
+    "Number Theory/Thoughts.md",
+    "Number Theory/Divisor.md",
+    "Number Theory/Sieve.md",
+    "Number Theory/ZZZProblems.md",
     "Number Theory.md",
+    "Untitled 1",
+    "Number Theory",
+    "smotify.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Welcome.md"
