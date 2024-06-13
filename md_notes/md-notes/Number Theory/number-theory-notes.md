@@ -1,0 +1,35 @@
+#prime_number
+- 2 is the only even prime number
+- every 2^k -1 is a prime number (Mersenne Prime Numbers)
+
+*prime testing methods*
+1. check from to 2 to n-1 if any one of them is a divisor ?  if all fails to be a divisor of n then n is a prime number
+2. its enough to check from 2 to sqrt(n) 
+		logic behind this comes from divisor theorem where we know that divisors of a number comes in pair 
+		for example :
+			12 = 1 X 12
+			 = 2 X 6
+			 = 3 X 4
+			 = 4 X 3 
+			 = 6 X 2
+		After sqrt(n) divisors repeats. If we want to get divisors of a number its enough to check till sqrt(n).
+		this can be proved mathematically using *contradiction method* 
+		let's say n = a x b (taking any two divisors of n )
+		if a >sqrt(n) and b > sqrt(n) 
+			then a x b 
+				= (sqrt(n)+p) x (sqrt(n)+q) 
+				= n + p . q + q . sqrt(n) + p . sqrt(n)
+				which is greater than n
+		else if a < sqrt(n) and b < sqrt(n)
+			then a x b
+				= (sqrt(n)-p) x (sqrt(n)-q)
+				= n + p . q  - q . sqrt(n) - p . sqrt(n)
+				which is also not equals to the n only
+		therefore
+			for every pair of divisors a and b 
+			a <=sqrt(n) then b>=sqrt(n)
+	now if we come to out prime testing
+			we want to check only divisors and its enough to check one divisor from every pair so we itertate 2....sqrt(n)
+
+
+3. Then till this point we're testing every divisor from 2 to sqrt(n) but if a number is not divisible by 2 then it won't be divisible by any even number right? and also if the number is not divisible by 3 then it won't be divisible by 9,15,21... so on. the point is if a number is not divisible by any prime number less than n then it won't be divisible by any of its multiple. The improvement we can do here is we can check 2 only separately and then checking the odd numbers only is enough for prime checking. and while checking the odd numbers we can mark its multiple to ignore in the future.

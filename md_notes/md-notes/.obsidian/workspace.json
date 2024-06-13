@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b3615f5b7e7535b6",
+        "id": "15569ead49cdf6d7",
         "type": "tabs",
         "children": [
           {
-            "id": "401e1545be54b544",
+            "id": "6de581093d7fc54f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Number Theory/Thoughts.md",
-                "mode": "source",
+                "file": "Number Theory/number-theory-notes.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "66581ae55a8db8df",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Number Theory/Thoughts.md",
+                "file": "Number Theory/number-theory-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Number Theory/Thoughts.md",
+                "file": "Number Theory/number-theory-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Number Theory/Thoughts.md"
+                "file": "Number Theory/number-theory-notes.md"
               }
             }
           }
@@ -146,14 +147,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "401e1545be54b544",
+  "active": "6de581093d7fc54f",
   "lastOpenFiles": [
-    "Number Theory/Prime Factorization.md",
+    "Number Theory/number-theory-notes.md~",
+    "linux-essentials/tmux.md",
+    "Number Theory/number-theory-notes.md",
+    "linux-essentials/keybinding.md",
+    "Untitled.md",
+    "linux-essentials",
     "Number Theory/Thoughts.md",
+    "Number Theory.md",
+    "Number Theory/Prime Factorization.md",
     "Number Theory/Divisor.md",
     "Number Theory/Sieve.md",
     "Number Theory/ZZZProblems.md",
-    "Number Theory.md",
     "Untitled 1",
     "Number Theory",
     "smotify.md",
